@@ -1,4 +1,7 @@
 language: default
+before_install:
+- openssl aes-256-cbc -K $encrypted_d92718467815_key -iv $encrypted_d92718467815_iv -in himitu.enc -out himitu -d
 
 script:
 - echo hello
+- cat himitu

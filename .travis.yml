@@ -1,0 +1,4 @@
+language: default
+
+script:
+- echo hello
